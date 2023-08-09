@@ -1,35 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
+<title>Fahrenheit to Celcius Temperature Converter</title>
 <body>
 
-<h1>My Web Page</h1>
+<h2>Temperature Converter</h2>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
 
-<div id="piechart"></div>
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script type="text/javascript">
-// Load google charts
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-// Draw the chart and set the chart values
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Task', 'Hours per Day'],
-  ['Work', 8],
-  ['Eat', 2],
-  ['TV', 4],
-  ['Gym', 2],
-  ['Sleep', 8]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'My Average Day', 'width':550, 'height':400};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
 }
 </script>
 
