@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<html>
-<title>Fahrenheit to Celcius Temperature Converter</title>
-<body>
+<html lang="en">
 
-<h2>Temperature Converter</h2>
-<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+<head>
+<title>Philosophy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-content">
+
+<div class="w3-container">
+<h1>Philosopy</h1>
+<h3>Table of Contents</h3>
 
 <p>
-  <label>Fahrenheit</label>
-  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+<a href="philosophy_chapter1.htm">1. Metaphysics</a>
 </p>
-<p>Celcius: <span id="outputCelcius"></span></p>
 
-<script>
-function temperatureConverter(valNum) {
-  valNum = parseFloat(valNum);
-  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
-}
-</script>
+<p>
+<a href="philosophy_chapter2.htm">2. Epistemology</a>
+</p>
+
+<p>
+<a href="philosophy_chapter3.htm">3. Logics</a>
+</p>
+
+<p>
+<a href="philosophy_chapter4.htm">4. Ethics</a>
+</p>
+
+<p>
+<a href="philosophy_chapter5.htm">5. Aesthetics</a>
+</p>
+</div>
 
 </body>
 </html>
