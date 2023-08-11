@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<title>Philosophy</title>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
 </head>
-<body class="w3-content">
+<body>
 
-<div class="w3-container">
-<h1>Philosopy</h1>
-<h3>Table of Contents</h3>
-
-<p>
-<a href="philosophy_chapter1.htm">1. Metaphysics</a>
-</p>
-
-<p>
-<a href="philosophy_chapter2.htm">2. Epistemology</a>
-</p>
-
-<p>
-<a href="philosophy_chapter3.htm">3. Logics</a>
-</p>
-
-<p>
-<a href="philosophy_chapter4.htm">4. Ethics</a>
-</p>
-
-<p>
-<a href="philosophy_chapter5.htm">5. Aesthetics</a>
-</p>
+<div class="content">
+  <h1>This page is horizontally centered on screens that are wider than 500 pixels.</h1>
+  <h1>Resize the browser window to see the effect.</h1>
+  <p>This page is always centered on screens that are wider than 500px. On screens that are less than 
+  500px wide, it will span the whole of the page.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
+  <p>Content inside this container is centered horizontally.</p>
 </div>
 
 </body>
